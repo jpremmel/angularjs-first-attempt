@@ -1,5 +1,5 @@
 'use strict';
-import 'angular';
+const angular = require('angular');
 
 // Define `petsApp` module
 angular.module('petsApp', [

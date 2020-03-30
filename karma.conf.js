@@ -19,7 +19,7 @@ module.exports = function(config) {
       'lib/angular-route/angular-route.js': ['webpack', 'sourcemap'],
       '../node_modules/angular-mocks/angular-mocks.js': ['webpack', 'sourcemap'],
       'core/**/*.js': ['webpack', 'sourcemap'],
-      'view*/**/*.js': : ['webpack', 'sourcemap']
+      'view*/**/*.js': ['webpack', 'sourcemap']
     },
     plugins: [
       'karma-webpack',

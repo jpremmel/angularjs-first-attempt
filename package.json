@@ -7,7 +7,8 @@
     "test": "karma start karma.conf.js",
     "build": "webpack --mode development",
     "start": "npm run build & webpack-dev-server --open --mode development",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "copy-libs": "cpx \"node_modules/{angular,angular-*,html5-boilerplate/dist}/**/*\" app/lib -C"
   },
   "keywords": [],
   "author": "",
@@ -15,11 +16,13 @@
   "dependencies": {
     "angular": "^1.7.9",
     "angular-loader": "^1.7.9",
-    "angular-route": "^1.7.9"
+    "angular-route": "^1.7.9",
+    "html5-boilerplate": "^7.3.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.7.9",
     "clean-webpack-plugin": "^0.1.18",
+    "cpx": "^1.5.0",
     "html-webpack-plugin": "^4.0.3",
     "jasmine": "^3.5.0",
     "jasmine-core": "^3.5.0",
